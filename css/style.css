@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: green;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button, input, select, textarea {
+    font: inherit;
+}
+
+p {
+    margin: 10px 0;
+}
+
+h1, h2, h3, h4 {
+    margin: 10px 0;
+    line-height: 1.2;
+}
+
+a {
+    color: green;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: green;
+    color: white;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav a {
+    border-bottom: 2px solid transparent;
+}
+
+header nav a.active, header nav a:hover {
+    border-bottom-color: lightgray;
+}
+
+.logo h2 {
+    margin: 0;
+}
+
+.hero, .main-layout, .page-header, .schedule-container, .membership-container, .contact-container, footer {
+    padding: 20px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid green;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: green;
+    color: white;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.pricing-card {
+    border: 2px solid green;
+    padding: 20px;
+}
+
+.price {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.price span {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.pricing-card.featured {
+    border: 3px solid lightgray;
+}
+
+.form-wrapper {
+    max-width: 500px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid green;
+    background-color: white;
+    color: green;
+}
+
+.form-wrapper button {
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: 2px solid green;
+    cursor: pointer;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.feature-card {
+    padding: 10px;
+    border: 2px solid green;
+}
+
+footer {
+    border-top: 3px solid lightgray;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.aside-box {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid green;
+}
