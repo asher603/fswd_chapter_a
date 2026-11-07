@@ -1,0 +1,21 @@
+@media (max-width: 650px) {
+    .main-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .table-wrapper table {
+        min-width: 650px;
+    }
+}
