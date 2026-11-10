@@ -1,3 +1,4 @@
+/* base reset & typography */
 * {
     box-sizing: border-box;
 }
@@ -10,12 +11,14 @@ body {
     color: green;
 }
 
+/* keep images and video responsive within containers */
 img, video {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
+/* form elements do not inherit body font by default */
 button, input, select, textarea {
     font: inherit;
 }
@@ -33,6 +36,7 @@ a {
     color: green;
 }
 
+/* top navigation bar */
 header {
     display: flex;
     justify-content: space-between;
@@ -58,6 +62,7 @@ header a {
     text-decoration: none;
 }
 
+/* transparent bottom border reserves space to prevent layout jump on hover */
 header nav a {
     border-bottom: 2px solid transparent;
 }
@@ -70,10 +75,12 @@ header nav a.active, header nav a:hover {
     margin: 0;
 }
 
+/* consistent content padding across all page containers */
 .hero, .main-layout, .page-header, .schedule-container, .membership-container, .contact-container, footer {
     padding: 20px;
 }
 
+/* schedule table layout and borders */
 .table-wrapper {
     overflow-x: auto;
 }
@@ -95,6 +102,7 @@ th {
     color: white;
 }
 
+/* pricing cards grid */
 .pricing-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -116,10 +124,23 @@ th {
     font-weight: normal;
 }
 
+/* highlight the featured membership tier */
 .pricing-card.featured {
-    border: 3px solid lightgray;
+    border: 3px solid #e67e22;
 }
 
+/* badge tag for the featured tier */
+.pricing-card.featured .badge {
+    background-color: #e67e22;
+    color: white;
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* contact form styles */
 .form-wrapper {
     max-width: 500px;
 }
@@ -128,6 +149,7 @@ th {
     margin-bottom: 10px;
 }
 
+/* make labels block elements so they sit above inputs */
 .form-group label {
     display: block;
     margin-bottom: 5px;
@@ -149,6 +171,7 @@ th {
     cursor: pointer;
 }
 
+/* homepage feature cards */
 .features-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -160,6 +183,7 @@ th {
     border: 2px solid green;
 }
 
+/* footer layout and link columns */
 footer {
     border-top: 3px solid lightgray;
 }
@@ -181,6 +205,7 @@ footer {
     text-align: center;
 }
 
+/* homepage layout: 3fr main area + 1fr aside sidebar */
 .main-layout {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -193,6 +218,7 @@ footer {
     border: 2px solid green;
 }
 
+/* reusable button styling */
 .btn, .btn-secondary {
     display: inline-block;
     padding: 10px 15px;

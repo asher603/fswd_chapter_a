@@ -1,8 +1,12 @@
+/* mobile layout changes for screens up to 650px wide */
 @media (max-width: 650px) {
+
+    /* stack sidebar under the main content */
     .main-layout {
         grid-template-columns: 1fr;
     }
 
+    /* switch multi-column grids into single columns */
     .features-grid {
         grid-template-columns: 1fr;
     }
@@ -15,6 +19,7 @@
         grid-template-columns: 1fr;
     }
 
+    /* keep schedule table readable with isolated horizontal scroll */
     .table-wrapper table {
         min-width: 650px;
     }
