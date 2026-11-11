@@ -1,0 +1,25 @@
+/* schedule table layout and borders */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid green;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: green;
+    color: white;
+}
+
+.class-info {
+    margin-top: 30px;
+}

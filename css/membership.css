@@ -1,0 +1,61 @@
+/* pricing cards grid */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.pricing-card {
+    border: 2px solid green;
+    padding: 20px;
+}
+
+/* center CTA buttons inside membership cards */
+.pricing-card .btn {
+    display: block;
+    width: fit-content;
+    margin: 15px auto 0 auto;
+    text-align: center;
+}
+
+.price {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.price span {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* highlight the featured membership tier */
+.pricing-card.featured {
+    border: 3px solid #e67e22;
+}
+
+/* badge tag for the featured tier */
+.pricing-card.featured .badge {
+    background-color: #e67e22;
+    color: white;
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* membership perks grid */
+.perks-section {
+    margin-top: 40px;
+}
+
+.perks-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.perk-item {
+    border: 1px solid green;
+    padding: 15px;
+}

@@ -1,0 +1,51 @@
+/* contact page layout with 50/50 grid and divider */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.form-wrapper {
+    width: 100%;
+}
+
+/* subtle vertical divider and spacing for details & map */
+.details-wrapper {
+    width: 100%;
+    border-left: 1px solid lightgray;
+    padding-left: 40px;
+}
+
+.pdf-section {
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+/* make labels block elements so they sit above inputs */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid green;
+    background-color: white;
+    color: green;
+}
+
+/* center form submit button */
+.form-wrapper button {
+    display: block;
+    margin: 15px auto 0 auto;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: 2px solid green;
+    cursor: pointer;
+}

@@ -1,0 +1,41 @@
+/* homepage feature cards */
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.feature-card {
+    padding: 10px;
+    border: 2px solid green;
+}
+
+/* video section */
+.media-section {
+    margin-top: 20px;
+}
+
+/* rules section */
+.rules-section {
+    margin-top: 20px;
+}
+
+/* quick info boxes placed below main content in a 3-column row */
+aside {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.aside-box {
+    padding: 15px;
+    border: 2px solid green;
+}
+
+/* center the trial button inside the aside card */
+.aside-box .btn-secondary {
+    display: block;
+    width: fit-content;
+    margin: 10px auto 0 auto;
+}
