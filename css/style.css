@@ -114,6 +114,14 @@ th {
     padding: 20px;
 }
 
+/* center CTA buttons inside membership cards */
+.pricing-card .btn {
+    display: block;
+    width: fit-content;
+    margin: 15px auto 0 auto;
+    text-align: center;
+}
+
 .price {
     font-size: 30px;
     font-weight: bold;
@@ -140,9 +148,27 @@ th {
     margin-bottom: 10px;
 }
 
-/* contact form styles */
+/* contact page layout with wider gap */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
 .form-wrapper {
-    max-width: 500px;
+    width: 100%;
+}
+
+/* subtle vertical divider and spacing for details & map */
+.details-wrapper {
+    width: 100%;
+    border-left: 1px solid lightgray;
+    padding-left: 40px;
+}
+
+.pdf-section {
+    margin-top: 30px;
 }
 
 .form-group {
@@ -163,8 +189,11 @@ th {
     color: green;
 }
 
+/* center form submit button */
 .form-wrapper button {
-    padding: 10px;
+    display: block;
+    margin: 15px auto 0 auto;
+    padding: 10px 20px;
     background-color: green;
     color: white;
     border: 2px solid green;
@@ -192,6 +221,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    text-align: center;
 }
 
 .footer-col ul {
@@ -205,16 +235,16 @@ footer {
     text-align: center;
 }
 
-/* homepage layout: 3fr main area + 1fr aside sidebar */
-.main-layout {
+/* quick info boxes placed below main content in a 3-column row */
+aside {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    margin-top: 30px;
 }
 
 .aside-box {
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 15px;
     border: 2px solid green;
 }
 

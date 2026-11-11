@@ -1,22 +1,21 @@
 /* mobile layout changes for screens up to 650px wide */
 @media (max-width: 650px) {
 
-    /* stack sidebar under the main content */
-    .main-layout {
-        grid-template-columns: 1fr;
-    }
-
     /* switch multi-column grids into single columns */
-    .features-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .pricing-grid {
-        grid-template-columns: 1fr;
-    }
-    
+    .features-grid,
+    .pricing-grid,
+    aside,
+    .contact-grid,
     .footer-container {
         grid-template-columns: 1fr;
+    }
+
+    /* remove vertical border on mobile and add top separation */
+    .details-wrapper {
+        border-left: none;
+        padding-left: 0;
+        border-top: 1px solid lightgray;
+        padding-top: 25px;
     }
 
     /* keep schedule table readable with isolated horizontal scroll */
